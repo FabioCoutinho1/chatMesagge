@@ -86,7 +86,7 @@ const hanldeLogin = (e) => {
   login.style.display = "none";
   chat.style.display = "flex";
 
-  webSocket = new WebSocket("ws://localhost:8080");
+  webSocket = new WebSocket("wss://chat-backend-whwi.onrender.com");
   webSocket.onmessage = processMesagge;
 };
 
